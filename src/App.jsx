@@ -5,29 +5,31 @@ import ProfileComponent from './components/ProfileComponent'
 
 import './App.css'
 
+import data from './data.json'
+
 function App() {
 
-  const [data, setData] = useState([])
+  // const [data, setData] = useState([])
   const [timeFrame, setTimeFrame] = useState("Daily")
 
-  async function getData() {
-    try {
-      await fetch("https://strengthened-treasure-houseboat.glitch.me/dashboardData")
+  // async function getData() {
+  //   try {
+  //     await fetch("https://strengthened-treasure-houseboat.glitch.me/dashboardData")
 
-        .then(response => {
-          return response.json();
-        })
-        .then(data => {
-          setData(data.dashboardData)
-        })
-    } catch {
+  //       .then(response => {
+  //         return response.json();
+  //       })
+  //       .then(data => {
+  //         setData(data.dashboardData)
+  //       })
+  //   } catch {
 
-    }
-  }
+  //   }
+  // }
 
-  useEffect(() => {
-    getData()
-  }, [])
+  // useEffect(() => {
+  //   getData()
+  // }, [])
 
   function handleClick(e) {
     e.preventDefault()
