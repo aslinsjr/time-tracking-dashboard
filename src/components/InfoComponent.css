@@ -1,0 +1,44 @@
+.component-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem 0.5rem 1rem 1rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.component-container:hover {
+    transform: scale(1.05);
+}
+
+.component-container:hover > .inner-component {
+    background-color: hsl(226, 42%, 28%);
+}
+
+#header-img {
+    width: 50px;
+    height: 50px;
+}
+
+.inner-component {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.component-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inner-component h2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
