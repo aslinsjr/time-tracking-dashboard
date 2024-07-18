@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
     getData()
-  }, [data])
+  }, [])
 
   function handleClick(e) {
     e.preventDefault()
